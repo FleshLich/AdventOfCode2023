@@ -25,7 +25,7 @@ int main()
 		{
 			cur_char++;
 		}
-		printf("First: %c, %hu\n", *cur_char, (*cur_char));
+		printf("First: %c\n", *cur_char, (*cur_char));
 		line_value += (*cur_char - '0') * 10;
 		
 		cur_char = str + (strlen(str) - 1);
@@ -33,7 +33,7 @@ int main()
 		{
 			cur_char--;
 		}
-		printf("Last: %c, %hu\n", *cur_char, *cur_char);
+		printf("Last: %c\n", *cur_char, *cur_char);
 		line_value += (*cur_char - '0');
 		
 		printf("\tLine value: %hu\n", line_value);
